@@ -70,8 +70,8 @@ _tempest_plugins:
       install: "{{ tempest_service_available_magnum | bool }}"
   manila:
     - name: manila-tempest-plugin
-      repo: https://git.openstack.org/openstack/manila-tempest-plugin
-      branch: master
+      repo: https://github.com/mvollman/manila-tempest-plugin
+      branch: retry_share_delete
       install: "{{ tempest_service_available_manila | bool }}"
   networking-bgpvpn:
     - name: networking-bgpvpn
